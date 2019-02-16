@@ -397,7 +397,7 @@ body {
 	width:100%;
 	color:#b5b4b4;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
-	background:#0c0d0f url(../images/main_bg.jpg) no-repeat center top;
+	background:#0c0d0f url(/wp-content/themes/goldbay/assets/images/main_bg.jpg) no-repeat center top;
 }
 html, .main {
 	padding:0;
@@ -539,7 +539,7 @@ h1 small {
 .menu_nav ul li.active a, .menu_nav ul li a:hover {
 	text-decoration:none;
 	color:#fff;
-	background:url(../images/menu_a.png) no-repeat center center;
+	background:url(/wp-content/themes/goldbay/assets/images/menu_a.png) no-repeat center center;
 }
 .content {
 	padding:0;
@@ -849,7 +849,7 @@ ol li .send {
 	float:left;
 }
 .footer {
-	background:url(../images/footer_bg.jpg) no-repeat center bottom;
+	background:url(/wp-content/themes/goldbay/assets/images/footer_bg.jpg) no-repeat center bottom;
 }
 .footer_resize {
 	margin:0 auto;

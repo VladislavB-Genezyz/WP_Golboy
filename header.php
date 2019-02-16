@@ -21,8 +21,63 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
+
+
+
+
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'goldbay' ); ?></a>
+
+
+
+
+
+
+
+
+
+
+<div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="index.html"><span>Home Page</span></a></li>
+          <li><a href="support.html"><span>Support</span></a></li>
+          <li><a href="about.html"><span>About Us</span></a></li>
+          <li><a href="blog.html"><span>Blog</span></a></li>
+          <li><a href="contact.html"><span>Contact Us</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><a href="index.html"><span>Goldbay</span> <small>Company Slogan Here</small></a></h1>
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider">
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri()?>/assets/images/slide1.jpg" width="940" height="310" alt="" />
+					</a>
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri()?>/assets/images/slide2.jpg" width="940" height="310" alt="" />
+					</a>
+					<a href="#">
+						<img src="<?php echo get_template_directory_uri()?>/assets/images/slide3.jpg" width="940" height="310" alt="" />
+					</a>
+				</div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'goldbay' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -42,7 +97,7 @@
 				?>
 				<p class="site-description"><?php echo $goldbay_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'goldbay' ); ?></button>
@@ -52,7 +107,7 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav>
+	</header>#masthead -->
 
 	<div id="content" class="site-content">
