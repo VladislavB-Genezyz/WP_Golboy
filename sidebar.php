@@ -13,47 +13,24 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 
-
-
+<?php global $goldbay; ?>
 <div class="sidebar">
-        <div class="searchform">
-          <form id="formsearch" name="formsearch" method="post" action="#">
-            <span>
-            <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Search our ste:" type="text" />
-            </span>
-            <input name="button_search" src="images/search.gif" class="button_search" type="image" />
-          </form>
-        </div>
-        <div class="gadget">
-          <h2 class="star"><span>Sidebar</span> Menu</h2>
-          <div class="clr"></div>
-          <ul class="sb_menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">TemplateInfo</a></li>
-            <li><a href="#">Style Demo</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Archives</a></li>
-            <li><a href="#">Web Templates</a></li>
-          </ul>
-        </div>
+        <!-- <h2 class="star"><span>Sidebar</span> Menu</h2> -->
+        <?php dynamic_sidebar('main-sidebar')?>        
         <div class="gadget">
           <h2 class="star"><span>Sponsors</span></h2>
           <div class="clr"></div>
           <ul class="ex_menu">
-            <li><a href="http://www.dreamtemplate.com/">DreamTemplate</a><br />
-              Over 6,000+ Premium Web Templates</li>
-            <li><a href="http://www.templatesold.com/">TemplateSOLD</a><br />
-              Premium WordPress &amp; Joomla Themes</li>
-            <li><a href="http://www.imhosted.com/">ImHosted.com</a><br />
-              Affordable Web Hosting Provider</li>
-            <li><a href="http://www.megastockphotos.com/">MegaStockPhotos</a><br />
-              Unlimited Amazing Stock Photos</li>
-            <li><a href="http://www.evrsoft.com/">Evrsoft</a><br />
-              Website Builder Software &amp; Tools</li>
-            <li><a href="http://www.csshub.com/">CSS Hub</a><br />
-              Premium CSS Templates</li>
+            <li><a href="<?php echo $goldbay['sponsor1_href']?>"><?php echo $goldbay['sponsor1_title']?></a><br />
+            <?php echo $goldbay['sponsor1_text']?></li>
+            <li><a href="<?php echo $goldbay['sponsor2_href']?>"><?php echo $goldbay['sponsor2_title']?></a><br />
+              P<?php echo $goldbay['sponsor2_text']?></li>
+            <li><a href="<?php echo $goldbay['sponsor3_href']?>"><?php echo $goldbay['sponsor3_title']?></a><br />
+            <?php echo $goldbay['sponsor3_text']?></li>
           </ul>
         </div>
+        <?php 
+        ?>
       </div>
 
 <!-- <aside id="secondary" class="widget-area">

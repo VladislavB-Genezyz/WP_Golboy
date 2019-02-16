@@ -105,11 +105,11 @@ add_action( 'after_setup_theme', 'goldbay_content_width', 0 );
  */
 function goldbay_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'goldbay' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'Main sidebar', 'goldbay' ),
+		'id'            => 'main-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'goldbay' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
@@ -172,5 +172,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
+/**
+ * Redux framework.
+ */
+require get_template_directory() . '/logic/sample-config.php';
 
