@@ -127,7 +127,7 @@ function goldbay_scripts() {
 	// wp_enqueue_script( 'goldbay-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'goldbay-coin', get_template_directory_uri() . '/assets/js/coin-slider.min.js');
-	wp_enqueue_script( 'goldbay-cufon', get_template_directory_uri() . '/assets/js/cufon-yui.js');
+	// wp_enqueue_script( 'goldbay-cufon', get_template_directory_uri() . '/assets/js/cufon-yui.js');
 	wp_enqueue_script( 'goldbay-droid', get_template_directory_uri() . '/assets/js/droid_sans_400-droid_sans_700.font.js');
 	wp_enqueue_script( 'goldbay-script', get_template_directory_uri() . '/assets/js/script.js');
 

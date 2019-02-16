@@ -535,7 +535,7 @@ h1 small {
 	text-align:center;
 	background:none;
 }
-.menu_nav ul li.current-menu-item a, .menu_nav ul li a:hover {
+.menu_nav ul li.current-menu-item a,.menu_nav ul li.current_page_item a,  .menu_nav ul li a:hover {
 	text-decoration:none;
 	color:#fff;
 	background:url(/wp-content/themes/goldbay/assets/images/menu_a.png) no-repeat center center;
@@ -885,7 +885,9 @@ a {
 	outline:none;
 }
 /* WP specific styles*/
-
+.logo  h1 span{
+	font-size: 45px;
+}
 
 #search-2 .widget-title, #search-2 .screen-reader-text{
 	display: none;

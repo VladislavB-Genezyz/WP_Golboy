@@ -74,7 +74,7 @@
         //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
         'allow_sub_menu'       => true,
         // Show the sections below the admin menu item or not
-        'menu_title'           => __( 'Sample Options', 'redux-framework-demo' ),
+        'menu_title'           => __( 'GoldBay Options', 'redux-framework-demo' ),
         'page_title'           => __( 'Sample Options', 'redux-framework-demo' ),
         // You will need to generate a Google API key to use this feature.
         // Please visit: https://developers.google.com/fonts/docs/developer_api#Auth
@@ -2398,26 +2398,6 @@
         'desc'             => __( 'Input sponsors', 'redux-framework-demo' ),
         'customizer_width' => '400px',
         'icon'             => 'el el-asl'
-        // 'fields'     => array(
-        //     array(
-        //         'id'       => 'sponsor1_title',
-        //         'type'     => 'text',
-        //         'title'    => 'Sponsor 1',
-        //         'default'  => 'Brazzers'
-        //     ),
-        //     array(
-        //         'id'       => 'sponsor1_text',
-        //         'type'     => 'text',
-        //         'title'    => 'Sponsor 1 text',
-        //         'default'  => 'brazzers'
-        //     ),
-        //     array(
-        //         'id'       => 'sponsor1_href',
-        //         'type'     => 'text',
-        //         'title'    => 'Sponsor 1 href',
-        //         'default'  => 'https://www.youtube.com/watch?v=QRQHivXy75k'
-        //     )
-        // )
     ) );
     Redux::setSection( $opt_name, array(
         'title'            => __( 'Sponsor1', 'redux-framework-demo' ),

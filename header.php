@@ -15,7 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+
 
 	<?php wp_head(); ?>
 </head>
@@ -33,13 +33,15 @@
 								'menu_id'        => 'mainNav',
 							) );							
 				?>
-      </div>
+			</div>
+			
       <div class="logo">
         <h1>
-					<a href="<?php home_url('/')?>">
-						<!-- <span>Goldbay</span> -->
+					<a href="<?php echo home_url('/')?>">
+					<span>	<?php  echo bloginfo('name') ?>  </span> 
+						<!-- <span>echo </span> -->
 						<!-- <small>Company Slogan Here</small> -->
-						<?php  echo bloginfo('name') ?> 
+					
 					</a>
 				</h1>
       </div>
