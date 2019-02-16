@@ -137,9 +137,9 @@ function goldbay_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'goldbay_scripts' );
 
-add_action( 'after_setup_theme', 'golbay__navMenu');
+add_action( 'after_setup_theme', 'goldbay__navMenu');
 
-function golbay__navMenu(){
+function goldbay__navMenu(){
 	register_nav_menu( 'mainNav', 'Header menu' );
 }
 

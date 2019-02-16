@@ -22,38 +22,16 @@
 
 <body <?php body_class(); ?>>
 
-
-
-
-
-
 <div id="page" class="site">
-
-
-
-
-
-
-
-
-
 
 <div class="header">
     <div class="header_resize">
       <div class="menu_nav">
-        <!-- <ul>
-          <li class="active"><a href="index.html"><span>Home Page</span></a></li>
-          <li><a href="support.html"><span>Support</span></a></li>
-          <li><a href="about.html"><span>About Us</span></a></li>
-          <li><a href="blog.html"><span>Blog</span></a></li>
-          <li><a href="contact.html"><span>Contact Us</span></a></li>
-        </ul> -->
 				<?php 
 							wp_nav_menu( array(
 								'theme_location' => 'menu-1',
 								'menu_id'        => 'mainNav',
-							) );			
-				
+							) );							
 				?>
       </div>
       <div class="logo">
