@@ -43,9 +43,9 @@ if ( ! function_exists( 'goldbay_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'goldbay' ),
-		) );
+		// register_nav_menus( array(
+		// 	'menu-1' => esc_html__( 'Primary', 'goldbay' ),
+		// ) );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -137,6 +137,14 @@ function goldbay_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'goldbay_scripts' );
 
+add_action( 'after_setup_theme', 'golbay__navMenu');
+
+function golbay__navMenu(){
+	register_nav_menu( 'mainNav', 'Header menu' );
+}
+
+
+
 /**
  * Implement the Custom Header feature.
  */
@@ -163,4 +171,6 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
 

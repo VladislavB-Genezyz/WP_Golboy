@@ -463,8 +463,7 @@ h1 a, h1 a:hover {
 	color:#e0c578;
 	text-decoration:none;
 }
-h1 span {
-}
+
 h1 small {
 	display:block;
 	margin:-6px 0;
@@ -536,7 +535,7 @@ h1 small {
 	text-align:center;
 	background:none;
 }
-.menu_nav ul li.active a, .menu_nav ul li a:hover {
+.menu_nav ul li.current-menu-item a, .menu_nav ul li a:hover {
 	text-decoration:none;
 	color:#fff;
 	background:url(/wp-content/themes/goldbay/assets/images/menu_a.png) no-repeat center center;
@@ -564,8 +563,7 @@ h1 small {
 	padding:12px 0;
 	float:left;
 }
-.content .mainbar img {
-}
+
 .content .mainbar img.fl {
 	margin:0;
 	border:1px solid #5c5338;
@@ -574,8 +572,7 @@ h1 small {
 	margin:0 0 8px;
 	padding:6px 20px;
 }
-.content .mainbar .post_content {
-}
+
 .content .mainbar .post_content strong {
 	color:#dedede;
 }
@@ -638,8 +635,7 @@ p.infopost a {
 p.infopost a:hover {
 	text-decoration:underline;
 }
-p.infopost span.date {
-}
+
 .article a.com {
 	margin:0;
 	padding:0;

@@ -41,16 +41,29 @@
 <div class="header">
     <div class="header_resize">
       <div class="menu_nav">
-        <ul>
+        <!-- <ul>
           <li class="active"><a href="index.html"><span>Home Page</span></a></li>
           <li><a href="support.html"><span>Support</span></a></li>
           <li><a href="about.html"><span>About Us</span></a></li>
           <li><a href="blog.html"><span>Blog</span></a></li>
           <li><a href="contact.html"><span>Contact Us</span></a></li>
-        </ul>
+        </ul> -->
+				<?php 
+							wp_nav_menu( array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'mainNav',
+							) );			
+				
+				?>
       </div>
       <div class="logo">
-        <h1><a href="index.html"><span>Goldbay</span> <small>Company Slogan Here</small></a></h1>
+        <h1>
+					<a href="<?php home_url('/')?>">
+						<!-- <span>Goldbay</span> -->
+						<!-- <small>Company Slogan Here</small> -->
+						<?php  echo bloginfo('name') ?> 
+					</a>
+				</h1>
       </div>
       <div class="clr"></div>
       <div class="slider">
