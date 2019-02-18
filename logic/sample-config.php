@@ -2480,3 +2480,216 @@
             ),
         )
     ) );
+
+    /* Footer gallery */
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Footer gallery', 'redux-framework-demo' ),
+        'id'               => 'f-gallery',
+        'desc'             => __( 'Footer gallery config', 'redux-framework-demo' ),
+        'customizer_width' => '400px',
+        'icon'             => 'el el-photo'
+    ) );
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Footer gallery', 'redux-framework-demo' ),
+        'id'               => 'footer-gallery',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'icon'             => 'el el-photo-alt',
+        'fields'           => array(
+            array(
+                'id'       => 'gallery-title',
+                'type'     => 'text',
+                'title'    => __( 'Sponsor 3 title', 'redux-framework-demo' ),
+                'default'  => 'Brazzers image'
+            ),
+            array(
+                'id'       => 'f-img1-href',
+                'type'     => 'text',
+                'title'    => __( 'Img 1 href', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img1',
+                'type'     => 'media',
+                'title'    => __( 'Gallery image 1', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img2-href',
+                'type'     => 'text',
+                'title'    => __( 'Img 2 href', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img2',
+                'type'     => 'media',
+                'title'    => __( 'Gallery image 2', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img3-href',
+                'type'     => 'text',
+                'title'    => __( 'Img 3 href', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img3',
+                'type'     => 'media',
+                'title'    => __( 'Gallery image 3', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img4-href',
+                'type'     => 'text',
+                'title'    => __( 'Img 4 href', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img4',
+                'type'     => 'media',
+                'title'    => __( 'Gallery image 4 ', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img5-href',
+                'type'     => 'text',
+                'title'    => __( 'Img 5 href', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img5',
+                'type'     => 'media',
+                'title'    => __( 'Gallery image 5', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img6-href',
+                'type'     => 'text',
+                'title'    => __( 'Img 6 href', 'redux-framework-demo' )                
+            ),
+            array(
+                'id'       => 'f-img6',
+                'type'     => 'media',
+                'title'    => __( 'Gallery image 6', 'redux-framework-demo' )                
+            )
+        )
+    ) );
+
+
+/* Footer Service Overview */
+Redux::setSection( $opt_name, array(
+    'title'            => __( 'Footer service', 'redux-framework-demo' ),
+    'id'               => 'f-service',
+    'desc'             => __( 'Footer gallery config', 'redux-framework-demo' ),
+    'customizer_width' => '400px',
+    'icon'             => 'el el-wrench'
+) );
+Redux::setSection( $opt_name, array(
+    'title'            => __( 'Footer service', 'redux-framework-demo' ),
+    'id'               => 'footer-service',
+    'subsection'       => true,
+    'customizer_width' => '450px',
+    'icon'             => 'el el-photo-alt',
+    'fields'           => array(
+        array(
+            'id'       => 'service-title',
+            'type'     => 'text',
+            'title'    => __( 'Service title', 'redux-framework-demo' ),
+            'default'  => 'Footer service'
+        ),
+        array(
+            'id'       => 'service-paragraph',
+            'type'     => 'text',
+            'title'    => __( 'Service paragraph', 'redux-framework-demo' ),
+            'default'  => 'Service paragraph'
+        ),
+        array(
+            'id'       => 'service-link1-text',
+            'type'     => 'text',
+            'title'    => __( 'Service link text 1', 'redux-framework-demo' ),
+            'default'  => 'Service link 1'
+        ),
+        array(
+            'id'       => 'service-link1-href',
+            'type'     => 'text',
+            'title'    => __( 'Service link href 1', 'redux-framework-demo' ),
+            'default'  => 'Service link 1'
+        ),
+        array(
+            'id'       => 'service-link2-text',
+            'type'     => 'text',
+            'title'    => __( 'Service link 2 text', 'redux-framework-demo' ),
+            'default'  => 'Service link 2'
+        ),
+        array(
+            'id'       => 'service-link2-href',
+            'type'     => 'text',
+            'title'    => __( 'Service link 2 href', 'redux-framework-demo' ),
+            'default'  => 'Service link 2'
+        ),
+        array(
+            'id'       => 'service-link3-text',
+            'type'     => 'text',
+            'title'    => __( 'Service link 3 text', 'redux-framework-demo' ),
+            'default'  => 'Service link 3'
+        ),
+        array(
+            'id'       => 'service-link3-href',
+            'type'     => 'text',
+            'title'    => __( 'Service link 3 href', 'redux-framework-demo' ),
+            'default'  => 'Service link 3'
+        )
+    )
+));
+
+/* Footer contact */
+Redux::setSection( $opt_name, array(
+    'title'            => __( 'Footer contact', 'redux-framework-demo' ),
+    'id'               => 'f-service',
+    'desc'             => __( 'Footer gallery config', 'redux-framework-demo' ),
+    'customizer_width' => '400px',
+    'icon'             => 'el el-address-book'
+) );
+Redux::setSection( $opt_name, array(
+    'title'            => __( 'Footer contact', 'redux-framework-demo' ),
+    'id'               => 'footer-contact',
+    'subsection'       => true,
+    'customizer_width' => '450px',
+    'icon'             => 'el el-photo-alt',
+    'fields'           => array(
+        array(
+            'id'       => 'contact-title',
+            'type'     => 'text',
+            'title'    => __( 'Contact title', 'redux-framework-demo' ),
+            'default'  => 'Footer contact'
+        ),
+        array(
+            'id'       => 'contact-paragraph',
+            'type'     => 'text',
+            'title'    => __( 'Contact paragraph', 'redux-framework-demo' ),
+            'default'  => 'Footer paragraph'
+        ),
+        array(
+            'id'       => 'contact-address',
+            'type'     => 'text',
+            'title'    => __( 'Contact address', 'redux-framework-demo' ),
+            'default'  => 'Footer address'
+        ),
+        array(
+            'id'       => 'contact-telephone',
+            'type'     => 'text',
+            'title'    => __( 'Contact telephone', 'redux-framework-demo' ),
+            'default'  => 'Footer telephone'
+        ),
+        array(
+            'id'       => 'contact-fax',
+            'type'     => 'text',
+            'title'    => __( 'Contact fax', 'redux-framework-demo' ),
+            'default'  => 'Footer fax'
+        ),
+        array(
+            'id'       => 'contact-others',
+            'type'     => 'text',
+            'title'    => __( 'Contact others', 'redux-framework-demo' ),
+            'default'  => 'Footer others'
+        ),
+        array(
+            'id'       => 'contact-email',
+            'type'     => 'text',
+            'title'    => __( 'Contact email', 'redux-framework-demo' ),
+            'default'  => 'Footer emai'
+        )
+
+    )
+));

@@ -12,29 +12,90 @@
 ?>
 
 	</div>
+  <?php if(!isset($goldbay)){
+    global $goldbay;
+  }?>
 
 	<div class="fbg">
     <div class="fbg_resize">
       <div class="col c1">
-        <h2><span>Image</span> Gallery</h2>
-        <a href="#"><img src="images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+        
+        <?php if(isset($goldbay['gallery-title'])){ ?>
+          <h2><?php echo $goldbay['gallery-title']?></h2>
+        <?php }?> 
+        <?php 
+          if(isset($goldbay['f-img1-href']) && isset($goldbay['f-img1'])){ ?>
+            <a href="<?php echo $goldbay['f-img1-href']?> "><img src="<?php echo $goldbay['f-img1']['url'] ?> " width="75" height="75" alt="<?php echo $goldbay['f-img1']['title'] ?>" class="gal" /></a>
+         <?php } ?> 
+         <?php 
+          if(isset($goldbay['f-img2-href']) && isset($goldbay['f-img2'])){ ?>
+            <a href="<?php echo $goldbay['f-img2-href']?> "><img src="<?php echo $goldbay['f-img2']['url'] ?> " width="75" height="75" alt="<?php echo $goldbay['f-img2']['title'] ?>" class="gal" /></a>
+         <?php } ?> 
+         <?php 
+          if(isset($goldbay['f-img3-href']) && isset($goldbay['f-img3'])){ ?>
+            <a href="<?php echo $goldbay['f-img3-href']?> "><img src="<?php echo $goldbay['f-img3']['url'] ?> " width="75" height="75" alt="<?php echo $goldbay['f-img3']['title'] ?>" class="gal" /></a>
+         <?php } ?> 
+         <?php 
+          if(isset($goldbay['f-img4-href']) && isset($goldbay['f-img1'])){ ?>
+            <a href="<?php echo $goldbay['f-img4-href']?> "><img src="<?php echo $goldbay['f-img4']['url'] ?> " width="75" height="75" alt="<?php echo $goldbay['f-img4']['title'] ?>" class="gal" /></a>
+         <?php } ?> 
+         <?php 
+          if(isset($goldbay['f-img5-href']) && isset($goldbay['f-img5'])){ ?>
+            <a href="<?php echo $goldbay['f-img5-href']?> "><img src="<?php echo $goldbay['f-img5']['url'] ?> " width="75" height="75" alt="<?php echo $goldbay['f-img5']['title'] ?>" class="gal" /></a>
+         <?php } ?> 
+         <?php 
+          if(isset($goldbay['f-img6-href']) && isset($goldbay['f-img6'])){ ?>
+            <a href="<?php echo $goldbay['f-img6-href']?> "><img src="<?php echo $goldbay['f-img6']['url'] ?> " width="75" height="75" alt="<?php echo $goldbay['f-img6']['title'] ?>" class="gal" /></a>
+         <?php } ?> 
+
+      </div>
       <div class="col c2">
-        <h2><span>Services</span> Overview</h2>
-        <p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>
+         <?php if(isset($goldbay['service-title'])){?> 
+          <h2> <?php echo $goldbay['service-title'] ?></h2>
+         <?php }?>
+         <?php if(isset($goldbay['service-paragraph'])){?> 
+          <p> <?php echo $goldbay['service-paragraph'] ?></p>
+         <?php }?>
+
         <ul class="fbg_ul">
-          <li><a href="#">Lorem ipsum dolor labore et dolore.</a></li>
-          <li><a href="#">Excepteur officia deserunt.</a></li>
-          <li><a href="#">Integer tellus ipsum tempor sed.</a></li>
+          <?php if(isset($goldbay['service-link1-text']) &&  isset($goldbay['service-link1-href'])){?>
+            <li><a href="<?php echo $goldbay['service-link1-href'] ?>" target="_blanck"><?php echo $goldbay['service-link1-text']?></a></li>
+          <?php }?>
+          <?php if(isset($goldbay['service-link2-text']) &&  isset($goldbay['service-link2-href'])){?>
+            <li><a href="<?php echo $goldbay['service-link2-href'] ?>" target="_blanck"><?php echo $goldbay['service-link2-text']?></a></li>
+          <?php }?>
+          <?php if(isset($goldbay['service-link3-text']) &&  isset($goldbay['service-link3-href'])){?>
+            <li><a href="<?php echo $goldbay['service-link3-href'] ?>" target="_blanck"><?php echo $goldbay['service-link3-text']?></a></li>
+          <?php }?>
         </ul>
       </div>
       <div class="col c3">
-        <h2><span>Contact</span> Us</h2>
-        <p>Nullam quam lorem, tristique non vestibulum nec, consectetur in risus. Aliquam a quam vel leo gravida gravida eu porttitor dui.</p>
-        <p class="contact_info"> <span>Address:</span> 1458 TemplateAccess, USA<br />
-          <span>Telephone:</span> +123-1234-5678<br />
-          <span>FAX:</span> +458-4578<br />
-          <span>Others:</span> +301 - 0125 - 01258<br />
-          <span>E-mail:</span> <a href="#">mail@yoursitename.com</a> </p>
+      <?php if (isset($goldbay['contact-title'])){?>
+        <h2> <?php  echo $goldbay['contact-title'] ?></h2>
+      <?php }?> 
+      <?php if (isset($goldbay['contact-paragraph'])){?>
+        <p> <?php  echo $goldbay['contact-paragraph'] ?></p>
+      <?php }?> 
+
+        <p class="contact_info">
+
+          <?php if (isset($goldbay['contact-address'])){?>
+            <span> Address: </span> <?php  echo $goldbay['contact-address'] ?><br />
+          <?php }?> 
+          <?php if (isset($goldbay['contact-telephone'])){?>
+            <span> Telephone: </span> <?php  echo $goldbay['contact-telephone'] ?><br />
+          <?php }?> 
+          <?php if (isset($goldbay['contact-fax'])){?>
+            <span> FAX: </span> <?php  echo $goldbay['contact-fax'] ?><br />
+          <?php }?> 
+          <?php if (isset($goldbay['contact-others'])){?>
+            <span> Others: </span> <?php  echo $goldbay['contact-others'] ?><br />
+          <?php }?>
+          <?php if (isset($goldbay['contact-email'])){?>
+            <span> Email: </span> <?php  echo $goldbay['contact-email'] ?><br />
+          <?php }?> 
+
+        </p>
       </div>
       <div class="clr"></div>
     </div>
