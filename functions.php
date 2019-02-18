@@ -140,7 +140,9 @@ add_action( 'wp_enqueue_scripts', 'goldbay_scripts' );
 add_action( 'after_setup_theme', 'goldbay__navMenu');
 
 function goldbay__navMenu(){
+	add_image_size( 'post-thumb', 628, 192, true );
 	register_nav_menu( 'mainNav', 'Header menu' );
+	
 }
 
 
