@@ -38,7 +38,7 @@
       <div class="logo">
         <h1>
 					<a href="<?php echo home_url('/')?>">
-					<span>	<?php  echo bloginfo('name') ?>  </span> 				
+					<span>	<?php  echo bloginfo('name') ?>  </span>
 					</a>
 				</h1>
       </div>
