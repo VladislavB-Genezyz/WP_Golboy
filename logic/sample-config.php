@@ -2390,8 +2390,67 @@
         }
     }
 
-    /* goldBay config */
-
+    /* Goldbay config */
+    /* Header slider  */
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Header slider', 'redux-framework-demo' ),
+        'id'               => 'header-slider',
+        'desc'             => __( 'Input sponsors', 'redux-framework-demo' ),
+        'customizer_width' => '400px',
+        'icon'             => 'el el-slideshare'
+    ) );
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Image 1', 'redux-framework-demo' ),
+        'id'               => 'header_slider',
+        'subsection'       => true,
+        'customizer_width' => '450px',
+        'icon'             => 'el el-slideshare',
+        'fields'           => array(
+            array(
+                'id'       => 'h_image1-href',
+                'type'     => 'text',
+                'title'    => __( 'Image 1 href', 'redux-framework-demo' ),
+                'default'  => 'Brazzers'
+            ),
+            array(
+                'id'       => 'h_image1',
+                'type'     => 'media',
+                'title'    => __( 'Image 1 ', 'redux-framework-demo' ),
+                'default'  => array(
+                    'url'   => get_template_directory_uri().'/assets/images/slide1.jpg'
+                ),
+            ),
+            array(
+                'id'       => 'h_image2-href',
+                'type'     => 'text',
+                'title'    => __( 'Image 2 href', 'redux-framework-demo' ),
+                'default'  => 'Brazzers'
+            ),
+            array(
+                'id'       => 'h_image2',
+                'type'     => 'media',
+                'title'    => __( 'Image 2 ', 'redux-framework-demo' ),
+                'default'  => array(
+                    'url'   => get_template_directory_uri().'/assets/images/slide2.jpg'
+                ),
+            ),
+            array(
+                'id'       => 'h_image3-href',
+                'type'     => 'text',
+                'title'    => __( 'Image 3 href', 'redux-framework-demo' ),
+                'default'  => 'Brazzers'
+            ),
+            array(
+                'id'       => 'h_image3',
+                'type'     => 'media',
+                'title'    => __( 'Image 3 ', 'redux-framework-demo' ),
+                'default'  => array(
+                    'url'   => get_template_directory_uri().'/assets/images/slide3.jpg'
+                ),
+            ),
+        )
+    ));
+    /* Sponsor optoins */
     Redux::setSection( $opt_name, array(
         'title'            => __( 'Sidebar sponsors', 'redux-framework-demo' ),
         'id'               => 'sidebar-sponsors',

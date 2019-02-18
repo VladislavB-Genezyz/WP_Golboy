@@ -19,7 +19,7 @@
 
 	<?php wp_head(); ?>
 </head>
-
+<?php global $goldbay?>
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
@@ -38,25 +38,28 @@
       <div class="logo">
         <h1>
 					<a href="<?php echo home_url('/')?>">
-					<span>	<?php  echo bloginfo('name') ?>  </span> 
-						<!-- <span>echo </span> -->
-						<!-- <small>Company Slogan Here</small> -->
-					
+					<span>	<?php  echo bloginfo('name') ?>  </span> 				
 					</a>
 				</h1>
       </div>
       <div class="clr"></div>
       <div class="slider">
         <div id="coin-slider">
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri()?>/assets/images/slide1.jpg" width="940" height="310" alt="" />
+				<?php if(isset($goldbay['h_image1-href']) && isset($goldbay['h_image1'])){ ?>
+					<a href="<?php echo $goldbay['h_image1-href']?>">
+						<img src="<?php echo $goldbay['h_image1']['url'] ?>" width="940" height="310" alt="" />
 					</a>
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri()?>/assets/images/slide2.jpg" width="940" height="310" alt="" />
+				<?php }?>
+				<?php if(isset($goldbay['h_image2-href']) && isset($goldbay['h_image2'])){ ?>
+					<a href="<?php echo $goldbay['h_image2-href']?>">
+						<img src="<?php echo $goldbay['h_image2']['url'] ?>" width="940" height="310" alt="" />
 					</a>
-					<a href="#">
-						<img src="<?php echo get_template_directory_uri()?>/assets/images/slide3.jpg" width="940" height="310" alt="" />
+				<?php }?>
+				<?php if(isset($goldbay['h_image3-href']) && isset($goldbay['h_image3'])){ ?>
+					<a href="<?php echo $goldbay['h_image3-href']?>">
+						<img src="<?php echo $goldbay['h_image3']['url'] ?>" width="940" height="310" alt="" />
 					</a>
+				<?php }?>
 				</div>
         <div class="clr"></div>
       </div>
