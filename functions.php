@@ -194,3 +194,6 @@ require get_template_directory() . '/logic/pagination.php';
 
 /* Add file with filters*/
 require get_template_directory() . '/logic/filters.php';
+
+
+

@@ -1,6 +1,6 @@
 <?php 
 /*
-Template name: Front-page
+Template name: Front-page tamplate
 */
 
 ?>

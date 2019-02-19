@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contact
+Template Name: Contact template
 */ 
 
 ?>
@@ -23,31 +23,7 @@ Template Name: Contact
         <div class="article">
           <h2><span>Send us</span> mail</h2>
           <div class="clr"></div>
-          <!-- <form action="#" method="post" id="sendemail">
-            <ol>
-              <li>
-                <label for="name">Name (required)</label>
-                <input id="name" name="name" class="text" />
-              </li>
-              <li>
-                <label for="email">Email Address (required)</label>
-                <input id="email" name="email" class="text" />
-              </li>
-              <li>
-                <label for="website">Website</label>
-                <input id="website" name="website" class="text" />
-              </li>
-              <li>
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="8" cols="50"></textarea>
-              </li>
-              <li>
-                <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
-                <div class="clr"></div>
-              </li>
-            </ol>
-          </form> -->
-          <?php if(have_posts()){
+          <?php if(have_posts()){ // echo of [contact-form-7 id="131" title="ContactForm"]
 
                 while(have_posts()){ ?>
                     <?php the_post()?>
@@ -62,7 +38,7 @@ Template Name: Contact
       </div>
       <div class="clr"></div>
     </div>
-  </div>
+</div>
 
 
 <?php get_footer()?>

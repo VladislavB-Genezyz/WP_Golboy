@@ -791,7 +791,7 @@ ol li label {
 	margin:0;
 	padding:16px 0 0 0;
 }
-ol li input.text {
+ol li input[type=text], ol li input[type=email]  {
 	width:480px;
 	border:1px solid #c0c0c0;
 	margin:0;
