@@ -145,8 +145,17 @@ function goldbay__navMenu(){
 	
 }
 
-
-
+add_theme_support( 'post-formats', array(
+	'aside',
+	'audio',
+	'chat',
+	'gallery',
+	'image',
+	'link',
+	'quote',
+	'status',
+	'video'
+) );
 /**
  * Implement the Custom Header feature.
  */
