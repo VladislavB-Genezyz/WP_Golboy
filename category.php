@@ -12,7 +12,8 @@ get_header();
     <div class="content_resize">
       <div class="mainbar">
       <?php
-    require get_template_directory() . '/template-parts/content.php'; ?>
+         get_template_part('/template-parts/content');
+         ?>
        
       </div>
       <?php get_sidebar() ?>
