@@ -178,4 +178,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Redux framework.
  */
 require get_template_directory() . '/logic/sample-config.php';
+/*
+*	Pagination function
+*/
+require get_template_directory() . '/logic/pagination.php';
 
+/* Add file with filters*/
+require get_template_directory() . '/logic/filters.php';

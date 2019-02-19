@@ -29,7 +29,7 @@
       <div class="menu_nav">
 				<?php 
 							wp_nav_menu( array(
-								'theme_location' => 'menu-1',
+								'theme_location' => 'mainNav',
 								'menu_id'        => 'mainNav',
 							) );							
 				?>

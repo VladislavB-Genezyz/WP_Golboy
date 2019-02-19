@@ -60,7 +60,7 @@ get_header()
 
 
 
-        
+        <?php wp_bootstrap_pagination_goladbay();?>
         <p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
       </div>
       <?php get_sidebar() ?>
