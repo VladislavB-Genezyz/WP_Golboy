@@ -154,7 +154,8 @@ add_theme_support( 'post-formats', array(
 	'link',
 	'quote',
 	'status',
-	'video'
+	'video',
+	'blog'
 ) );
 /**
  * Implement the Custom Header feature.
@@ -194,6 +195,11 @@ require get_template_directory() . '/logic/pagination.php';
 
 /* Add file with filters*/
 require get_template_directory() . '/logic/filters.php';
+
+
+
+/* Add new post type*/
+require get_template_directory() . '/logic/newPosts.php';
 
 
 
