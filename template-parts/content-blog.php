@@ -1,4 +1,4 @@
-<?php 
+<?php
       $args = array(
         'post_type' => 'blog',
         'publish' => true
@@ -12,7 +12,7 @@
         <div class="article">
           <h2> <?php the_title() ?> </h2>
           <div class="clr"></div>
-          <p>Posted by 
+          <p>Posted by
             <a href="<?php  the_author_link()?>"><?php the_author()?></a>
             <span>&nbsp;&bull;&nbsp;</span>
             Filed under
@@ -25,8 +25,8 @@
           <p><a href="#"><strong>Comments (3)</strong></a> <span>&nbsp;&bull;&nbsp;</span> May 27, 2010 <span>&nbsp;&bull;&nbsp;</span> <a href="#"><strong>Edit</strong></a></p>
         </div>
       <?php } ?>
-        <?php 
-      wp_reset_postdata(); 
+        <?php
+      wp_reset_postdata();
 ?>
 
 <!-- <div class="article">
